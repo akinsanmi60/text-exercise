@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# QuestionTime (QT) Frontend Application
+This project is a frontend application for QuestionTime (QT), a SaaS company that provides a platform for users to set up multiple-choice questions. The application allows users to interact with the QT API to manage questions and their options.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
+Display existing questions and their options in a user-friendly interface.
+Create new questions with a minimum of 3 and a maximum of 5 options.
+Add or remove options to existing questions.
+Edit existing questions.
+Delete existing questions.
+Getting Started
+To run this project locally, follow these steps:
 
-Currently, two official plugins are available:
+Clone this repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copy code
+git clone https://github.com/your-username/question-time-frontend.git
+Navigate to the project 
 
-## Expanding the ESLint configuration
+# Usage
+Upon launching the application, you will be prompted to sign in using your email address to obtain an API token.
+Once signed in, you will be able to view existing questions, create new questions, edit existing questions, and delete questions.
+To create a new question, click on the "New Question" button and fill in the question and its options. Then click on the "Submit" button to save the question.
+To edit an existing question, click on the question you wish to edit and make the necessary changes. Then click on the "Save Changes" button.
+To delete an existing question, click on the question you wish to delete and confirm the action.
+Deployment
+This application can be deployed to any hosting provider that supports React applications. You can deploy it to platforms like Vercel, Netlify, or Firebase Hosting.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Technologies Used
+React.js
+Axios for API requests
+Tailwind for styling
+API Documentation
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+# Contributing
+Contributions are welcome! If you have any suggestions, improvements, or feature requests, feel free to open an issue or create a pull request.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+# Contact
+For any inquiries or feedback, please contact QuestionTime Support.
