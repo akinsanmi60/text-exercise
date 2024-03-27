@@ -8,6 +8,7 @@ import ErrorBoundary from './hooks/errorBoundary';
 import Login from './pages/login';
 import ViewQuestion from './components/viewQuestion';
 import LayoutWrapper from './shared/Layout';
+import PrivateRoute from './hooks/privateRoute';
 
 function App() {
   const router = createBrowserRouter(
@@ -17,11 +18,14 @@ function App() {
         <Route
           path="/viewquestions/:tab"
           element={
-            <LayoutWrapper>
-              <ViewQuestion />
-            </LayoutWrapper>
+            <PrivateRoute>
+              <LayoutWrapper>
+                <ViewQuestion />
+              </LayoutWrapper>
+            </PrivateRoute>
           }
         />
+        <Route path="*" element={<>Page Not Found</>} />
       </>,
     ),
   );
