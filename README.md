@@ -14,7 +14,7 @@ Clone this repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/question-time-frontend.git
+git clone https://github.com/akinsanmi60/text-exercise.git
 Navigate to the project 
 
 # Usage
